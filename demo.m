@@ -1,3 +1,9 @@
+addpath internal/;
+addpath visualizations/;
+%addpath spams/ -begin
+addpath(genpath('spams'));
+
+% added by xhjia above, and also some places in compile.m 
 im = double(imread('2007_000272.jpg')) / 255.;
 feat = features(im, 8);
 ihog = invertHOG(feat);

@@ -2,6 +2,6 @@
 
 fprintf('compiling features.cc\n');
 mex -O internal/features.cc -o internal/features
-
+%mex -O  internal/features.cc
 fprintf('compiling spams\n');
 run 'spams/compile.m'
